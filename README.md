@@ -4,7 +4,10 @@ The Scala binding for ZeroMQ is based on ZeroMQ versions 2.1.x and uses [JNA][]
 for accessing native functions. It is a thin wrapper of the ZeroMQ API, but
 offers also a `jzmq`-like API intending to be compatible with the Java binding
 for ZeroMQ; users of the Java binding wanting to access ZeroMQ over JNA can
-switch over to the Scala binding.
+switch over to the Scala binding. 
+
+svozniuk: changed the return type of the poll(long timeout) method in ZMQ.java
+to make it fully compatible with java bindings(https://github.com/zeromq/jzmq)
 
 [JNA]: https://github.com/twall/jna
 
