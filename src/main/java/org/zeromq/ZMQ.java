@@ -583,7 +583,7 @@ public class ZMQ {
       return poll(timeout);
     }
 
-    public long poll(long timeout) {
+    public int poll(long timeout) {
       int pollItemCount = 0;
       for (int i = 0; i < nextEventIndex; i++) {
         revents[i] = 0;
